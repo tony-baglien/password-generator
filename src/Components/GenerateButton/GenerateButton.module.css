@@ -1,0 +1,18 @@
+.button {
+    display: block;
+    padding: 10px 20px;
+    width: 40%;
+
+    font-family: var(--font-family);
+    font-size: var(--font-button);
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-dark);
+
+    transition: all ease-in 0.2s;
+}

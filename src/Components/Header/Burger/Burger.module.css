@@ -1,0 +1,8 @@
+.burger {
+    font-size: var(--font-title);
+    transition: 0.3s ease-in;
+}
+.burger:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

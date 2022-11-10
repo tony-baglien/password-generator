@@ -1,10 +1,15 @@
 import LockImage from "../LockImage/LockImage";
 import styles from "./LockContainer.module.css";
 
-const LockContainer = () => {
+const LockContainer = (props) => {
     return (
-        <div className={styles.lockContainer}>
-            <LockImage />
+        <div
+            className={
+                styles.lockContainer +
+                (props.isGenerate ? " " + styles.spin : "")
+            }
+        >
+            <LockImage isGenerate={props.isGenerate} />
         </div>
     );
 };

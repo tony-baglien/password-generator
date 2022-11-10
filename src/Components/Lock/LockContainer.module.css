@@ -6,8 +6,28 @@
     justify-content: center;
 
     padding-top: 3rem;
+
+    perspective: 8000;
 }
 
-.lockContainer {
-    animation: idle 1s;
+/* .spin {
+    animation: spin 5s forwards;
+} */
+
+@keyframes spin {
+    10% {
+        transform: rotateY(170deg);
+    }
+    20% {
+        transform: rotateY(175deg);
+    }
+    22% {
+        transform: rotateY(180deg);
+    }
+    25% {
+        transform: rotateY(185deg);
+    }
+    50% {
+        transform: rotateY(360deg);
+    }
 }

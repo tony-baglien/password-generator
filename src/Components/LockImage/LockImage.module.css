@@ -4,3 +4,39 @@
     stroke-miterlimit: 10;
     stroke-width: 5px;
 }
+
+.lockHindge {
+    transform: translateY(-140px);
+}
+
+.open {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.hindge {
+    animation-name: hindge;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes hindge {
+    0% {
+        transform: translateY(-140px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
